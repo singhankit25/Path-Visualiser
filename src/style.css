@@ -1,0 +1,88 @@
+/* styles.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f2f5;
+}
+
+.visualizer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  background-color: #4caf50;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #3e8e41;
+}
+
+.grid {
+  display: grid;
+  gap: 1px;
+  background-color: #000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+
+.cell.wall {
+  background-color: black;
+}
+
+.cell.visited {
+  background-color: #ffeb3b;
+}
+
+.cell.start {
+  background-color: #4caf50;
+}
+
+.cell.end {
+  background-color: #f44336;
+}
+
+button.set-start,
+button.set-end,
+button.reset {
+  background-color: #008cba;
+}
+
+button.set-start:hover,
+button.set-end:hover,
+button.reset:hover {
+  background-color: #007bb5;
+}
